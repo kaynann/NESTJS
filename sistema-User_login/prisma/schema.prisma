@@ -15,8 +15,9 @@ datasource db {
 
 model user_login {
   id Int @id @default(autoincrement())
-  name String
+  name String 
   email String
   cpf String
   password String
+  @@unique([name])
 }
